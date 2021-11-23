@@ -13,10 +13,15 @@ the difference is in main.go in cmd/offline and cmd/online and .env file
 ## Makefile
 
 maria: to start MariaDB docker container
+
 mongodb: to start MongoDB docker container
+
 offline-image: to build offline api docker image
+
 online-image: to build online api docker image
+
 offline-container: to start offline api docker container
+
 online-container: to start online api docker container
 
 ## Run Order
