@@ -19,8 +19,8 @@ type Handler struct {
 	filter string
 }
 
-func NewHandler(store storer) *Handler {
-	return &Handler{store: store}
+func NewHandler(store storer, filter string) *Handler {
+	return &Handler{store: store, filter: filter}
 }
 
 func (h *Handler) Order(c Context) {

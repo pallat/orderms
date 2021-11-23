@@ -25,7 +25,7 @@ func init() {
 
 func main() {
 	client := http.Client{
-		Timeout: 30 * time.Second,
+		Timeout: time.Second,
 		Transport: &http.Transport{
 			Proxy:               http.ProxyFromEnvironment,
 			TLSClientConfig:     &tls.Config{InsecureSkipVerify: true},
