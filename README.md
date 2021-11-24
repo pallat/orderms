@@ -26,7 +26,13 @@ online-container: to start online api docker container
 
 ## Run Order
 
-After start MariaDB, MongoDB, Offline and Online contianer
+start MariaDB, MongoDB, Offline and Online contianer
 
 run command:
-> cd cmd/orderfe && go run order.go
+> make maria
+> make mongodb
+> make offline-image
+> make online-image
+> make offline-container
+> make online-container
+> go run cmd/orderfe/order.go
